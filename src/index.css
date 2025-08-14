@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Government-inspired design system for Udyam registration form
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 100% 99%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Government blue color scheme */
+    --primary: 213 88% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 213 88% 30%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 39 100% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 72% 29%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 39 100% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 213 88% 35%;
+
+    /* Government-specific tokens */
+    --government-blue: 213 88% 35%;
+    --government-orange: 39 100% 45%;
+    --government-green: 142 72% 29%;
+    --government-light-blue: 213 100% 97%;
+    --government-dark-blue: 213 100% 25%;
+
+    /* Gradients */
+    --gradient-government: linear-gradient(135deg, hsl(var(--government-blue)), hsl(var(--government-dark-blue)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--government-orange)), hsl(39 100% 55%));
+
+    /* Shadows */
+    --shadow-government: 0 4px 20px hsl(var(--government-blue) / 0.15);
+    --shadow-card: 0 2px 10px hsl(215 25% 15% / 0.08);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 215 25% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 215 25% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 215 25% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 213 88% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 213 88% 60%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 39 100% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 213 88% 55%;
+
+    /* Dark mode government tokens */
+    --government-blue: 213 88% 55%;
+    --government-orange: 39 100% 55%;
+    --government-green: 142 72% 45%;
+    --government-light-blue: 213 50% 15%;
+    --government-dark-blue: 213 100% 20%;
+
+    --gradient-government: linear-gradient(135deg, hsl(var(--government-blue)), hsl(var(--government-dark-blue)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--government-orange)), hsl(39 100% 65%));
+
+    --shadow-government: 0 4px 20px hsl(var(--government-blue) / 0.25);
+    --shadow-card: 0 2px 10px hsl(0 0% 0% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
